@@ -216,7 +216,27 @@ main > section{
     border-radius: 8px;
 }
 
+#ex-badge{
+    padding: 45px 42px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
 
+#ex-year{
+    font-size: 4rem;
+    font-weight: 700;
+
+}
+
+#ex-text{
+    font-size: 1.56rem;
+    font-weight: 500;
+}
+
+.featured-architect img{
+
+    width: 100%;
+}
 
 
 /*  Some Facts Related Styles*/
@@ -284,12 +304,33 @@ main > section{
 }
 
 
+/* Footer */
+
+footer{
+
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgba(255, 144, 14, 0.1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 410px;
+    padding-right: 410px;
+}
+
+.footer-text{
+
+    text-align: center;
+}
+
+
+
+
 
 /* Responsive Media Query */
 
 @media screen and (max-width: 576px) {
     
-    .navbar, .nav-links, .teams{
+    .navbar, .nav-links, .teams, .Enjoy-features{
         flex-direction: column;
     }
 
@@ -315,13 +356,21 @@ main > section{
 
         margin-left: 20px;
     }
+
+    #ex-badge{
+
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
+
+
 
 /* Medium Size Device */
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
 
-    .teams{
+    .teams, .Enjoy-features{
         flex-direction: column;
     }
     
@@ -334,5 +383,11 @@ main > section{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
         justify-items: center;
+    }
+
+    #ex-badge{
+
+        margin-top: 20px;
+        margin-left: 20px;
     }
 }
